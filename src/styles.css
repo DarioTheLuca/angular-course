@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */ 
+ body{
+    /* background-image: url(./assets/img/star-bg.svg),linear-gradient(#191c20, #24292e 15%);;
+     background-repeat: repeat-x;  */
+     /* background-color: #709cc9; */
+}  
+@import "~bootstrap/dist/css/bootstrap.css"

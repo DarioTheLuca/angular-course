@@ -1,0 +1,34 @@
+  .welcome{
+    text-align: center;
+    color:darkblue;
+    overflow: auto;
+    /* b     */
+    
+  }
+
+  h2{
+       font-size:500%; 
+      
+      
+  }
+  p{
+    font-size:200%; 
+  }
+
+  #sfondo{
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  /* #congrats{
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    width: 30%;
+    height: 30%;
+  } */

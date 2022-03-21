@@ -1,0 +1,81 @@
+<div class="center">
+    <!-- <img src="../.././assets/img/wp5722075.png" id="sfondo"> -->
+    <h1>Clienti</h1>
+    
+    <table id="clienti1" border="1">
+        <caption></caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Età</th>
+                <th>Codice cliente</th>
+                <th>Data di nascita</th>
+                <th>Data noleggio</th>
+                <th>Durata noleggio (ore)</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ngFor fa fare un ciclo. articolo ( variabile locale al ciclo) indica la riga iesima di articoli -->
+            <tr *ngFor="let cliente of clienti"> 
+                <td>{{cliente.nome}}</td>
+                <td>{{cliente.cognome}}</td>
+                <td>{{cliente.eta}}</td>
+                <td>{{cliente.codCliente}}</td>
+                <td>{{cliente.dataNascita| date: 'dd-MM-YYYY'}}</td>
+                <td>{{cliente.dataNoleggio| date: 'dd-MM-YYYY'}}</td>
+                <td>{{cliente.durataNoleggioH}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+<br><br>
+
+    <table id="clienti2" border="1">
+        <caption></caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Età</th>
+                <th>Codice cliente</th>
+                <th>Data di nascita</th>
+                <th>Data noleggio</th>
+                <th>Durata noleggio (ore)</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ngFor fa fare un ciclo. articolo ( variabile locale al ciclo) indica la riga iesima di articoli -->
+            <tr *ngFor="let cliente2 of clienti2"> 
+                <td>{{cliente2.nome}}</td>
+                <td>{{cliente2.cognome}}</td>
+                <td>{{cliente2.eta}}</td>
+                <td>{{cliente2.codCliente}}</td>
+                <td>{{cliente2.dataNascita| date: 'dd-MM-YYYY'}}</td>
+                <td>{{cliente2.dataNoleggio| date: 'dd-MM-YYYY'}}</td>
+                <td>{{cliente2.durataNoleggioH}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="codehim-form">
+        <div class="form-title">
+
+            <h2> Hai già noleggiato un monopattino o una bicicletta elettrica?</h2>
+        </div>
+
+        <label for="nomeid"><i class="fa fa-envelope"></i></label>
+        <input type="text" id="userid" class="cm-input" placeholder="Y/N" [(ngModel)]="noleggio" >
+        <br><br>    
+        <button class="btn-login  gr-bg"  (click)="noleggiato()" >Conferma risposta</button>
+        <br><br>
+        <button class="btn-login  gr-bg" *ngIf="mostra" (click)="goWelcome2Page()" >Go to the Welcome page</button>
+        
+    
+
+    </div>
+
+</div>

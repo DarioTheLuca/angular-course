@@ -1,0 +1,44 @@
+<div class="center">
+    <!-- <img src="../.././assets/img/wp5722075.png" id="sfondo"> -->
+    <div class="codehim-form">
+        <div class="form-title">
+
+            <h2> Inserisci le credenziali</h2>
+        </div>
+        <label for="userid"><i class="fa fa-envelope"></i> UserId:</label>
+
+        <input type="text" id="userid" class="cm-input" placeholder="INSERIRE USERNAME" [(ngModel)]='userName'>
+
+        
+
+
+        <label for="userpassword"><i class="fa fa-lock"></i> UserPassword:</label>
+        <input id="UserPassword" type="password" class="cm-input" placeholder="PASSWORD" [(ngModel)]='password'>
+
+        <label for="eta"><i class="fa fa-lock"></i> Età:</label>
+        <input id="eta" type="number" class="cm-input" placeholder="ETA'" [(ngModel)]="eta">
+
+        <button class="btn-login  gr-bg" (click)="autenticazione()">Login</button>
+        <br>
+        <div *ngIf="!autenticato || b">Username e/o password ERRATI</div>
+
+    </div>
+
+    <br><br><br>
+    <!-- <div id="mydiv"> Il mio username é <b id="un">{{userName}} </b>e la password è <b id="up">{{password}} </b></div> -->
+
+
+     <p *ngIf="autenticato" class="blink  bigText"
+        [ngClass]="{'multicolortext2': !maggiorenne, 'multicolortext':maggiorenne } ">{{msg2}}</p> 
+
+
+
+
+    <!--
+<div *ngIf="autenticato2"><img id="msg2" src="../../assets/img/Congratulation-PNG-Picture.png" alt=""></div>
+    -->
+
+
+
+
+</div>

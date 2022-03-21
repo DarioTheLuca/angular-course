@@ -1,0 +1,33 @@
+.multicolortext {
+    background-image: linear-gradient(to left, rgb(160, 59, 93), rgb(185, 17, 45), rgb(145, 11, 51), rgb(119, 8, 8), rgb(218, 32, 32), rgb(223, 46, 69), red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.bigText{
+    font-size:2cm;
+}
+
+.blink{
+
+    animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 2s steps(5, start) infinite;
+      }
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+  
+    
+}
+
+p{
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<div class="center">
+    <!-- <img src="../.././assets/img/wp5722075.png" id="sfondo"> -->
+    <div class="codehim-form">
+        <div class="form-title">
+
+            <h2> Inserisci le altre credenziali</h2>
+        </div>
+
+        <label for="nomeid"><i class="fa fa-envelope"></i> Nome:</label>
+        <input type="text" id="userid" class="cm-input" placeholder="INSERIRE USERNAME" [(ngModel)]='nome'>
+
+        
+
+        <label for="cognomeid"><i class="fa fa-envelope"></i> Cognome:</label>
+        <input type="text" id="nomeid" class="cm-input" placeholder="INSERIRE NOME" [(ngModel)]='cognome'>
+
+        <label for="pin"><i class="fa fa-envelope"></i> Pin:</label>
+        <input type="text" id="pin" class="cm-input" placeholder="pin" [(ngModel)]='pin'>
+
+        <button class="btn-login  gr-bg" (click)="conferma()">Conferma</button>
+        <p>{{msg}}</p>
+        
+    
+
+    </div>
+
+    <br><br><br>
+
+</div>

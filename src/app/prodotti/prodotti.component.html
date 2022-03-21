@@ -1,0 +1,57 @@
+<div class="center">
+    <!-- <img src="../.././assets/img/wp5722075.png" id="sfondo"> -->
+<h1>Articoli disponibili</h1>
+
+<table id="biciclette" border="1" >
+    <caption>Biciclette</caption>
+    <thead>
+        <tr>
+            <th>Raggio ruota</th>
+            <th>Colore</th>
+            <th>Durata(ore)</th>
+            <th>Costo orario</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <!-- ngFor fa fare un ciclo. articolo ( variabile locale al ciclo) indica la riga iesima di articoli -->
+        <tr *ngFor="let bicicletta of biciclette"> 
+            <td>{{bicicletta.raggio}}</td>
+            <td>{{bicicletta.colore}}</td>
+            <td>{{bicicletta.durataH}}</td>
+            <td>{{bicicletta.costoH}}</td>
+    
+
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<table id="monopattini" border="1">
+    <caption>Monopattini</caption>
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Colore</th>
+            <th>Durata(ore)</th>
+            <th>Velocità massima</th>
+            <th>Costo orario</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <!-- ngFor fa fare un ciclo. articolo ( variabile locale al ciclo) indica la riga iesima di articoli -->
+        <tr *ngFor="let monopattino of monopattini"> 
+            <td>{{monopattino.marca}}</td>
+            <td>{{monopattino.colore}}</td>
+            <td>{{monopattino.durataH}}</td>
+            <td>{{monopattino.Vmax}}</td>
+            <td>{{monopattino.costoH}}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<br><br>
+<a *ngIf="condizione" routerLink="/articoli" >Vai ad articoli</a>
+</div>
